@@ -1,0 +1,319 @@
+.banner{
+  display: grid;
+  grid-template-rows: .1fr .1fr 1fr;
+  gap: 50px;
+}
+
+.banner .banner__head{
+  grid-row: 2;
+}
+
+.banner .banner__text{
+  grid-row: 3;
+}
+
+.banner .banner__stamp{
+  grid-row: 1;
+}
+
+.banner .banner__stamp img{
+  width: 160px;
+  height: 160px;
+}
+
+h2 {
+    font-weight: 900;
+   font-size: 35px;
+   line-height: 35.7px;
+   margin: 0 auto;
+   text-transform: uppercase;
+  text-align: center;
+}
+
+.speakers h3 {
+  font-weight: 900;
+  font-size: 23.93px;
+  line-height: 24.71px;
+  text-align: center;
+  color: #212529;
+  margin: 38px 0 15px;
+}
+
+.org {
+  color: #FF3C00;
+}
+
+.speakers .span {
+  font-weight: 800;
+  font-size: 14.41px;
+  line-height: 22.5px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 1px;
+  margin-top: 46px;
+  text-decoration: underline;
+}
+
+.stamp {
+  display: none;
+}
+
+.join-us-at {
+  max-width: 340px;
+}
+
+.join-us-at h3 {
+  font-weight: 900;
+  font-size: 31.68px;
+  line-height: 31.78px;
+}
+
+.join-us__tickets {
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.join-us-preview {
+  padding: 100px 20px 60px;
+}
+
+.join-us__tickets_price {
+  font-size: 44px;
+  font-weight: 800;
+  color: #111;
+  padding: 65px 60px;
+  border-right: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.join-us__tickets_info {
+  flex: 1;
+  padding: 35px 40px;
+  border-right: 2px dashed #e5e5e5;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.join-us__tickets_info p {
+  margin: 0;
+  font-size: 20px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.join-us__tickets_info strong {
+  font-weight: 600;
+}
+
+.join-us__tickets_info span {
+  color: #000;
+  font-weight: 700;
+}
+
+.join-us__tickets_date {
+  color: #b19aff;
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.join-us__tickets_soldout {
+  background: #ccc;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+
+.join-us__tickets_soldout::before {
+  top: -12px;
+}
+.join-us__tickets_soldout::after {
+  bottom: -12px;
+}
+
+.join-us__ticket {
+  position: relative;
+  overflow: visible;
+  background: #fff;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  flex-direction: column;
+  width: 100%;
+  max-width: 340px;
+}
+
+.join-us__ticket::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -14px;
+  width: 100%;
+  height: 24px;
+  background-image: url("../images/before-mobile.svg");
+  background-size: contain;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.join-us__ticket::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 100%;
+  height: 24px;
+  background-image: url(../images/after-mobile.svg);
+  background-size: contain;
+  pointer-events: none;
+   z-index: 2;
+}
+
+.join-us__tickets_decoration {
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    background: #EAEAEA;
+    bottom: 0;
+    left: 10%;
+}
+
+.join-us__tickets_decoration::after,
+.join-us__tickets_decoration::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: block;
+    border-radius: 50%;
+    background: #EAEAEA;
+    top: -4px;
+  }
+
+  .join-us__tickets_decoration::after {
+    left: -4px;
+  }
+
+  .join-us__tickets_decoration::before {
+    right: -4px;
+  }
+
+  .about-section {
+  padding: 50px 24px;
+}
+
+.about-pic {
+  width: 100%;
+}
+
+.about-section h2 {
+  font-weight: 900;
+  font-size: 34.44px;
+  line-height: 35.7px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: start;
+}
+
+.about-section P {
+  font-size: 17.81px;
+  line-height:30PX;
+  color: #FFFFFF;
+  margin-top: 24px;
+}
+
+.about-1 > div,
+.about-2 > div {
+width: 100%;
+}
+
+.about-1 {
+  margin-bottom: 60px;
+  flex-direction: column-reverse;
+}
+
+.about-2 {
+  flex-direction: column;
+}
+
+.step-number {
+    top: 49px;
+    left: 44%;
+    width: 50%;
+}
+
+.steps-container {
+  flex-direction: column;
+}
+
+.steps-section__h2 {
+    font-size: 17.85px;
+    line-height: 35.7px;
+    margin-bottom: 40px;
+}
+
+.step-info-txt h2 {
+  font-size: 30.56px;
+  line-height: 31.78px;
+  margin-bottom: 30px;
+}
+
+.step-info-txt p {
+  font-size: 18.13px;
+  line-height: 30px;
+}
+
+.components-section h2 {
+  font-size: 34.72px;
+  line-height: 35.7px;
+  width: 70%;
+}
+
+.components-section {
+  padding: 50px 17px 200px;
+}
+
+.updates__image {
+  display: none;
+}
+
+.partner-btn {
+  margin: 60px 36px;
+  top: -180px;
+}
+
+.partner-btn p {
+  width: 100%;
+}
+
+.cta-section h2 {
+  text-align: center;
+}
+
+.updates {
+  padding: 40px 24px;
+}
+
+.updates__inputs {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 20px;
+}
