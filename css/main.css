@@ -12,7 +12,6 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
 }
@@ -48,12 +47,9 @@ header .right {
   font-size: 14px;
 }
 
-/* HERO SECTION */
 .hero {
-  /*position: relative;*/
   padding: 100px 20px 120px;
   text-align: left;
-  /*max-width: 900px;*/
   margin: 0 auto;
   background-image: url("../images/image.png");
   background-repeat: no-repeat;
@@ -235,7 +231,7 @@ header .right {
   justify-content: center;
   align-items: center; 
   border-radius: 12px;
-  overflow: hidden;цццццццццццц
+  overflow: hidden;
 }
 
 .components-pic img {
@@ -384,7 +380,6 @@ header .right {
 
 .more-section {
   background: #323232;
-  padding: 160px 0;
 }
 
 .video-youtube iframe {
@@ -392,8 +387,132 @@ header .right {
   height: 100%;
 }
 
+.video-youtube {
+  max-width: 1200px;
+  height: 700px;
+}
 
-/* RESPONSIVE */
+  .more-section {
+    color: #ffffff;
+}
+
+.more-section__info h2,
+.more-section__blocks h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: start;
+}
+
+.more-section__map {
+  background: #262626;
+  border-radius: 20px;
+}
+
+
+.more_section_txt {
+  grid-column: 1;
+  align-self: center;
+}
+
+
+.more-section__map {
+  padding: 50px;
+  grid-column: 2;
+}
+
+.more-section__map p {
+  font-size: 18.28px;
+  line-height: 30px;
+  text-align: start;
+}
+
+.more-section__map button {
+  border: 1px solid #ffffff;
+  color: #000;
+  background-color: #FFFFFF;
+  padding: 18px 30px;
+  margin-top: 35px;
+}
+
+.partnership-section {
+  background: #FFFFFF;
+  padding-bottom: 95px;
+}
+
+.partnership-h3 {
+  font-size: 34.72px;
+  line-height: 35.7px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  font-weight: 900;
+}
+
+.partners-logo {
+  flex: 0 0 30%;
+}
+
+.faq-section {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.faq-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: #FFFFFF66;
+  border: none;
+  padding: 15px 20px;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.active {
+  background: #ffffff;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  padding: 0 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 15px 20px;
+  max-height: 500px; 
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  min-width: 24px;
+}
+
+.faq-item.active .arrow {
+  transform: rotate(180deg);
+}
+
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 36px;

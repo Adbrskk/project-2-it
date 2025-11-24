@@ -1,22 +1,26 @@
-.banner{
+.container {
+  padding: 0 16px;
+}
+
+.banner {
   display: grid;
   grid-template-rows: .1fr .1fr 1fr;
   gap: 50px;
 }
 
-.banner .banner__head{
+.banner .banner__head {
   grid-row: 2;
 }
 
-.banner .banner__text{
+.banner .banner__text {
   grid-row: 3;
 }
 
-.banner .banner__stamp{
+.banner .banner__stamp {
   grid-row: 1;
 }
 
-.banner .banner__stamp img{
+.banner .banner__stamp img {
   width: 160px;
   height: 160px;
 }
@@ -32,7 +36,7 @@ h2 {
 
 .speakers h3 {
   font-weight: 900;
-  font-size: 23.93px;
+  font-size: 20.93px;
   line-height: 24.71px;
   text-align: center;
   color: #212529;
@@ -156,50 +160,50 @@ h2 {
 }
 
 .join-us__ticket::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -14px;
-  width: 100%;
-  height: 24px;
-  background-image: url("../images/before-mobile.svg");
-  background-size: contain;
-  pointer-events: none;
-  z-index: 2;
+content: "";
+position: absolute;
+left: 0;
+top: -14px;
+width: 100%;
+height: 24px;
+background-image: url("../images/before-mobile.svg");
+background-size: contain;
+pointer-events: none;
+z-index: 2;
 }
 
 .join-us__ticket::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -14px;
-  width: 100%;
-  height: 24px;
-  background-image: url(../images/after-mobile.svg);
-  background-size: contain;
-  pointer-events: none;
-   z-index: 2;
+content: "";
+position: absolute;
+left: 0;
+bottom: -14px;
+width: 100%;
+height: 24px;
+background-image: url(../images/after-mobile.svg);
+background-size: contain;
+pointer-events: none;
+  z-index: 2;
 }
 
 .join-us__tickets_decoration {
-    position: absolute;
-    height: 2px;
-    width: 80%;
-    background: #EAEAEA;
-    bottom: 0;
-    left: 10%;
+  position: absolute;
+  height: 2px;
+  width: 80%;
+  background: #EAEAEA;
+  bottom: 0;
+  left: 10%;
 }
 
 .join-us__tickets_decoration::after,
 .join-us__tickets_decoration::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    display: block;
-    border-radius: 50%;
-    background: #EAEAEA;
-    top: -4px;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 50%;
+  background: #EAEAEA;
+  top: -4px;
   }
 
   .join-us__tickets_decoration::after {
@@ -211,7 +215,7 @@ h2 {
   }
 
   .about-section {
-  padding: 50px 24px;
+  padding: 50px 0;
 }
 
 .about-pic {
@@ -249,19 +253,25 @@ width: 100%;
 }
 
 .step-number {
-    top: 49px;
-    left: 44%;
-    width: 50%;
+  top: 49px;
+  left: 44%;
+  width: 50%;
+}
+
+.component h3 {
+  font-size: 21.64px;
+  line-height: 22.75px;
 }
 
 .steps-container {
   flex-direction: column;
+  padding: 0 10px;
 }
 
 .steps-section__h2 {
-    font-size: 17.85px;
-    line-height: 35.7px;
-    margin-bottom: 40px;
+  font-size: 17.85px;
+  line-height: 35.7px;
+  margin-bottom: 40px;
 }
 
 .step-info-txt h2 {
@@ -275,6 +285,10 @@ width: 100%;
   line-height: 30px;
 }
 
+.join-us-section {
+  padding: 20px 0 120px;
+}
+
 .components-section h2 {
   font-size: 34.72px;
   line-height: 35.7px;
@@ -282,7 +296,15 @@ width: 100%;
 }
 
 .components-section {
-  padding: 50px 17px 200px;
+  padding: 50px 0 200px;
+}
+
+.cta-section-con {
+  height: 200px;
+}
+
+.updates__content h2 {
+  text-align: left;
 }
 
 .updates__image {
@@ -302,12 +324,42 @@ width: 100%;
   text-align: center;
 }
 
-.updates {
-  padding: 40px 24px;
+.partnership-h3 {
+  padding: 55px 0;
+}
+
+.partners-logo {
+  padding-top: 30px;
+}
+
+.partners-logo img {
+  width: 100%;
+}
+
+
+.updates-section {
+  padding: 40px 0;
 }
 
 .updates__inputs {
   display: block;
+}
+
+.more_section_txt h3 {
+  margin: 50px 0;
+  font-size: 15.9px;
+}
+
+.more-section {
+  padding: 100px 0;
+}
+
+.more-section__info {
+  margin-top: 60px;
+}
+
+.more-section__info h2 {
+  font-size: 15.9px;
 }
 
 .form-group {
@@ -316,4 +368,28 @@ width: 100%;
 
 .form-group label {
   margin-bottom: 20px;
+}
+
+
+.faq-question {
+  font-size: 18.3px;
+  line-height: 23.04px;
+}
+
+.faq-answer {
+  font-size: 15.54px;
+  line-height: 26.4px;
+}
+
+
+.more-section__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.video-youtube {
+  max-width: 340px;
+  height: 192px;
+  margin: 0 auto;
 }
